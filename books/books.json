@@ -1,0 +1,26 @@
+[
+    {
+        "code":"flora_and_fauna",
+        "markdown":"flora_and_fauna.md",
+        "title":"Greenery and Wildlife of the Lands West the Main",
+        "author":"Tomas Grenfild",
+        "date":"62:v/C525",
+        "cover":""
+    },
+    {
+        "code":"wester_worlds",
+        "markdown":"wester_worlds.md",
+        "title":"Wester Worlds",
+        "author":"Addam Dolton",
+        "date":"59:v/C522",
+        "cover":""
+    },
+    {
+        "code":"reignbook",
+        "markdown":"reignbook.md",
+        "title":"Reignbook of Holsland",
+        "author":"Laurent Roote",
+        "date":"14:c/C610",
+        "cover":""
+    }
+]

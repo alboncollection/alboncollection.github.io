@@ -1,0 +1,86 @@
+/*
+    only colour information is defined in this stylesheet
+    for position, margins etc. see 'main.css'
+*/
+:root {
+    --color-light:#e3e1da;
+    --color-accent-light:#c1b8ab;
+    --color-brand:#9e8d7b;
+    --color-accent-dark:#423f3c;
+    --color-dark:#53493d;
+}
+
+/* elements */
+body {
+    background-color: var(--color-light);
+    color:var(--color-dark);
+}
+
+section:nth-child(odd) {
+    background-color: var(--color-light);
+}
+
+section:nth-child(even) {
+    background-color: var(--color-accent-light);
+}
+
+footer {
+    background-color: var(--color-accent-dark);
+    color: var(--color-light);
+}
+
+a {
+    color:var(--color-dark);
+}
+
+a:hover {
+    color:var(--color-dark);
+}
+
+/* classes */
+.bg-white {
+    background-color:white;
+}
+
+.bg-light {
+    background-color:var(--color-light) !important;
+}
+
+.bg-accent-light {
+    background-color: var(--color-accent-light) !important;
+}
+
+.btn:hover {
+    background-color: var(--color-accent-dark);
+    color:var(--color-light);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color:var(--color-dark);
+    color:var(--color-dark);
+}
+
+.btn-outline:active {
+    background-color:var(--color-dark);
+    color:var(--color-light);
+}
+
+.text-light {
+    color:var(--color-light);
+}
+
+.text-dark {
+    color:var(--color-dark);
+}
+
+.active {
+    font-weight:bold;
+}
+
+.project-item-content:hover {
+    color:var(--color-light);
+    background-color:var(--color-dark);
+}
+
+/* ids */
