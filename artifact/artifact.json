@@ -1,0 +1,77 @@
+[
+    {
+        "type":"book",
+        "code":"flora_and_fauna",
+        "markdown":"flora_and_fauna.md",
+        "title":"Greenery and Wildlife of the Lands West the Main",
+        "author":"Tomas Grenfild",
+        "date":"62:v/C525",
+        "cover":"",
+        "tags":""
+    },
+    {
+        "type":"book",
+        "code":"wester_worlds",
+        "markdown":"wester_worlds.md",
+        "title":"Wester Worlds",
+        "author":"Addam Dolton",
+        "date":"59:v/C522",
+        "cover":"",
+        "tags":""
+    },
+    {
+        "type":"book",
+        "code":"reignbook",
+        "markdown":"reignbook.md",
+        "title":"Reignbook of Holsland",
+        "author":"Laurent Roote",
+        "date":"14:c/C610",
+        "cover":"",
+        "tags":""
+    },
+    {
+        "type":"painting",
+        "code":"bend",
+        "thumb":"",
+        "path":"/asset/images/bend.png",
+        "author":"",
+        "date":"",
+        "tags":""
+    },
+    {
+        "type":"painting",
+        "code":"giants",
+        "thumb":"",
+        "path":"/asset/images/giants.png",
+        "author":"",
+        "date":"",
+        "tags":""
+    },
+    {
+        "type":"painting",
+        "code":"peaks",
+        "thumb":"",
+        "path":"/asset/images/peaks.png",
+        "author":"",
+        "date":"",
+        "tags":""
+    },
+    {
+        "type":"painting",
+        "code":"portrait",
+        "thumb":"",
+        "path":"/asset/images/portrait.png",
+        "author":"",
+        "date":"",
+        "tags":""
+    },
+    {
+        "type":"painting",
+        "code":"topography",
+        "thumb":"",
+        "path":"/asset/images/topography.png",
+        "author":"",
+        "date":"",
+        "tags":""
+    }
+]

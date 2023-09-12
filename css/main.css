@@ -1,33 +1,33 @@
 /* fonts */
 @font-face {
     font-family: eingraviert;
-    src: url(/assets/fonts/Eingraviert.ttf);
+    src: url(/asset/font/Eingraviert.ttf);
 }
 
 @font-face {
     font-family: apothecary;
-    src: url(/assets/fonts/Apothecary\ Serif\ Regular.ttf);
+    src: url(/asset/font/Apothecary\ Serif\ Regular.ttf);
 }
 
 @font-face {
     font-family: apothecary-spaced;
-    src: url(/assets/fonts/Apothecary\ Serif\ Spaced.ttf);
+    src: url(/asset/font/Apothecary\ Serif\ Spaced.ttf);
 }
 
 @font-face {
     font-family: legitima;
-    src: url(/assets/fonts/Legitima-Regular.ttf);
+    src: url(/asset/font/Legitima-Regular.ttf);
 }
 
 @font-face {
     font-family: legitima-italic;
-    src: url(/assets/fonts/Legitima-Italic.ttf);
+    src: url(/asset/font/Legitima-Italic.ttf);
     font-style: italic;
 }
 
 @font-face {
     font-family: canterbury;
-    src: url(/assets/fonts/Canterbury.ttf);
+    src: url(/asset/font/Canterbury.ttf);
 }
 
 /* elements */
@@ -200,7 +200,7 @@ a:hover {
         #e3e1dad0, 
         #e3e1dad0
         ),
-        url(/assets/profile.jpg);*/
+        url(/asset/profile.jpg);*/
     background-repeat: no-repeat;
     background-size:cover;
     background-position:50%;
