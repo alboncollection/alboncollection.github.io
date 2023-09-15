@@ -16,11 +16,11 @@ body {
     color:var(--color-dark);
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: var(--color-light);
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
     background-color: var(--color-accent-light);
 }
 
@@ -35,6 +35,10 @@ a {
 
 a:hover {
     color:var(--color-dark);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--color-accent-light);
 }
 
 /* classes */
@@ -78,9 +82,12 @@ a:hover {
     font-weight:bold;
 }
 
-.project-item-content:hover {
+#artifact-list tbody tr:hover {
     color:var(--color-light);
     background-color:var(--color-dark);
 }
 
 /* ids */
+#artifact-list tbody tr {
+    cursor:pointer;
+}

@@ -1,4 +1,5 @@
 import * as util from "/js/util.js";
+import { Setup as SetupArchive } from "/js/archive.js"
 
 window.onload = function(){
     util.LoadHtmlInto("/partial/footer.partial.html", "footer");
@@ -8,4 +9,8 @@ window.onload = function(){
         duration:1000,
         once:true,
     });
+}
+
+window.SetupArchive = function() {
+    SetupArchive();
 }

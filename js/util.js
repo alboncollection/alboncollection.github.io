@@ -1,12 +1,12 @@
 export {
-    LoadHtmlInto
+    LoadHtmlInto,
 }
 
-function LoadHtmlInto(filename, id) {
+function LoadHtmlInto(filename, selector) {
     fetch(filename)
     .then(response => response.text())
-    .then(text => document.getElementById(id).innerHTML = text)
+    .then(text => document.querySelector(selector).innerHTML = text)
     .catch((error) => {
-        console.log("load html failed:",error);
+        console.log(`failed to load '${filename}' into '${selector}' | ${error}`);
     });
 }
