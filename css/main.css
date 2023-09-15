@@ -74,6 +74,10 @@ a:hover {
     text-decoration: none;
 }
 
+td,th {
+    padding:10px;
+}
+
 /* classes */
 .height-100 {
     min-height:100vh;
@@ -192,6 +196,32 @@ a:hover {
 .remove-scrolling {
     height:100%;
     overflow:hidden;
+}
+
+.library-background {
+    background-image: 
+        linear-gradient(
+        #e3e1dad0, 
+        #e3e1dad0
+        ),
+        /* your image */
+        url(/asset/image/library.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:50%;
+}
+
+.gallery-background {
+    background-image: 
+        linear-gradient(
+        #e3e1dad0, 
+        #e3e1dad0
+        ),
+        /* your image */
+        url(/asset/image/gallery.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:50%;
 }
 
 .profile-background {

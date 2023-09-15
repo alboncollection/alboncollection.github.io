@@ -1,5 +1,5 @@
 export {
-    ARTIFACTS_LIST_PATH
+    ARTIFACT_LIST_PATH
 }
 
-const ARTIFACTS_LIST_PATH = "/artifact/artifact.json";
+const ARTIFACT_LIST_PATH = "/artifact/artifact.json";

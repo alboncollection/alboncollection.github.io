@@ -1,5 +1,5 @@
 import * as util from "/js/util.js";
-import { Setup as ArchiveSetup } from "/js/archive.js"
+import { Setup as SetupArchive } from "/js/archive.js"
 
 window.onload = function(){
     util.LoadHtmlInto("/partial/footer.partial.html", "footer");
@@ -11,6 +11,6 @@ window.onload = function(){
     });
 }
 
-window.SetupArchivePage = function() {
-    ArchiveSetup();
+window.SetupArchive = function() {
+    SetupArchive();
 }

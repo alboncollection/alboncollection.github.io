@@ -1,77 +1,82 @@
 [
     {
         "type":"book",
-        "code":"flora_and_fauna",
         "markdown":"flora_and_fauna.md",
         "title":"Greenery and Wildlife of the Lands West the Main",
         "author":"Tomas Grenfild",
-        "date":"62:v/C525",
+        "created":"62:v/C525",
+        "admitted":"",
         "cover":"",
         "tags":""
     },
     {
         "type":"book",
-        "code":"wester_worlds",
         "markdown":"wester_worlds.md",
         "title":"Wester Worlds",
         "author":"Addam Dolton",
-        "date":"59:v/C522",
+        "created":"59:v/C522",
+        "admitted":"",
         "cover":"",
         "tags":""
     },
     {
         "type":"book",
-        "code":"reignbook",
         "markdown":"reignbook.md",
         "title":"Reignbook of Holsland",
         "author":"Laurent Roote",
-        "date":"14:c/C610",
+        "created":"14:c/C610",
+        "admitted":"",
         "cover":"",
         "tags":""
     },
     {
         "type":"painting",
-        "code":"bend",
         "thumb":"",
         "path":"/asset/images/bend.png",
+        "title":"",
         "author":"",
-        "date":"",
+        "created":"",
+        "admitted":"",
         "tags":""
     },
     {
         "type":"painting",
-        "code":"giants",
         "thumb":"",
         "path":"/asset/images/giants.png",
+        "title":"",
         "author":"",
-        "date":"",
+        "created":"",
+        "admitted":"",
         "tags":""
     },
     {
         "type":"painting",
-        "code":"peaks",
         "thumb":"",
         "path":"/asset/images/peaks.png",
+        "title":"",
         "author":"",
-        "date":"",
+        "created":"",
+        "admitted":"",
         "tags":""
     },
     {
         "type":"painting",
-        "code":"portrait",
         "thumb":"",
         "path":"/asset/images/portrait.png",
+        "title":"",
         "author":"",
-        "date":"",
+        "created":"",
+        "admitted":"",
         "tags":""
     },
     {
         "type":"painting",
-        "code":"topography",
         "thumb":"",
         "path":"/asset/images/topography.png",
+        "title":"",
         "author":"",
-        "date":"",
+        "created":"",
+        "admitted":"",
         "tags":""
     }
 ]

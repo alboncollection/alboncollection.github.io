@@ -16,11 +16,11 @@ body {
     color:var(--color-dark);
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: var(--color-light);
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
     background-color: var(--color-accent-light);
 }
 
@@ -36,6 +36,10 @@ a {
 a:hover {
     color:var(--color-dark);
 }
+
+tr:nth-child(even) {
+    background-color: var(--color-accent-light);
+  }
 
 /* classes */
 .bg-white {

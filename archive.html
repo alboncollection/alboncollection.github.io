@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="/js/main.js" type="module"></script>
+        <script src="/js/app.js" type="module"></script>
         <title>Archive</title>
         <!-- meta -->
             <!-- required -->
@@ -22,13 +22,13 @@
             <script src="/vendor/jquery-3.6.0/jquery-3.6.0.slim.min.js"></script>
             <script src="/vendor/aos/js/aos.js"></script>
             <!-- custom -->
-            <script src="/js/main.js" type="module"></script>
+            <script src="/js/app.js" type="module"></script>
     </head>
     <body>
         <nav></nav>
         <main>
             <!-- title section -->
-            <section class="height-100 align-items-center p-4 px-md-5">
+            <section class="height-100 align-items-center p-4 px-md-5 gallery-background">
                 <div class="container">
                     <div class="row text-center">
                         <h1 class="title" data-aos="fade-left">Archive</h1>
@@ -36,34 +36,68 @@
                     </div>
                 </div>
             </section>
-            <!-- artifacts section -->
-            <section class="height-80 align-items-center p-4 px-md-5">
+            <!-- artifact section -->
+            <section class="height-80 d-flex justify-content-center p-4 px-md-5">
                 <div class="container">
                     <div class="row mt-3 mb-4 justify-content-center" data-aos="fade">
                         <div class="col align-items-end">
                             filters
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3 mb-3 mb-lg-0">
-                            <img src="/asset/image/giants.png" class="w-100 shadow-1-strong rounded mb-4" alt="1"/>
-                        </div>
-                        <div class="col-lg-3 mb-3 mb-lg-0">
-                            <img src="/asset/image/giants.png" class="w-100 shadow-1-strong rounded mb-4" alt="2"/>
-                        </div>
-                        <div class="col-lg-3 mb-3 mb-lg-0">
-                            <img src="/asset/image/giants.png" class="w-100 shadow-1-strong rounded mb-4" alt="3"/>
-                        </div>
-                        <div class="col-lg-3 mb-3 mb-lg-0">
-                            <img src="/asset/image/giants.png" class="w-100 shadow-1-strong rounded mb-4" alt="4"/>
-                        </div>
-                        <div class="col-lg-3 mb-3 mb-lg-0">
-                            <img src="/asset/image/giants.png" class="w-100 shadow-1-strong rounded mb-4" alt="5"/>
-                        </div>
+                    <div class="row" id="artifact-gallery">
+                    </div>
+                    <div class="row" id="artifact-list">
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Author</th>
+                                <th>Created</th>
+                                <th>Acquired</th>
+                            </tr>
+                            <tr>
+                                <td>{{name}}</td>
+                                <td>{{type}}</td>
+                                <td>{{author}}</td>
+                                <td>{{created}}</td>
+                                <td>{{acquired}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{name}}</td>
+                                <td>{{type}}</td>
+                                <td>{{author}}</td>
+                                <td>{{created}}</td>
+                                <td>{{acquired}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{name}}</td>
+                                <td>{{type}}</td>
+                                <td>{{author}}</td>
+                                <td>{{created}}</td>
+                                <td>{{acquired}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{name}}</td>
+                                <td>{{type}}</td>
+                                <td>{{author}}</td>
+                                <td>{{created}}</td>
+                                <td>{{acquired}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{name}}</td>
+                                <td>{{type}}</td>
+                                <td>{{author}}</td>
+                                <td>{{created}}</td>
+                                <td>{{acquired}}</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </section>
         </main>
     </body>
     <footer></footer>
+    <script>
+        window.addEventListener("load", () => window.SetupArchive());
+    </script>
 </html>
