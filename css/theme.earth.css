@@ -37,9 +37,9 @@ a:hover {
     color:var(--color-dark);
 }
 
-tr:nth-child(even) {
+tbody tr:nth-child(odd) {
     background-color: var(--color-accent-light);
-  }
+}
 
 /* classes */
 .bg-white {
@@ -82,9 +82,12 @@ tr:nth-child(even) {
     font-weight:bold;
 }
 
-.project-item-content:hover {
+#artifact-list tbody tr:hover {
     color:var(--color-light);
     background-color:var(--color-dark);
 }
 
 /* ids */
+#artifact-list tbody tr {
+    cursor:pointer;
+}

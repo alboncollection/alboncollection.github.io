@@ -9,10 +9,8 @@ async function Setup() {
 }
 
 async function PopulateArtifacts() {
-    const jsonArtifacts = GetArtifactJSON();
-    const templateArtifactItem = GetArtifactListItemTemplate();
-    const artifactListItems = BuildArtifactListItems(jsonArtifacts, templateArtifactItem);
-    const container = document.getElementById("artifact-list");
+    const artifactListItems = await BuildArtifactListItems();
+    const container = document.querySelector("#artifact-list table tbody");
     if(!container)
         return;
 
@@ -21,17 +19,22 @@ async function PopulateArtifacts() {
     }
 }
 
-function BuildArtifactListItems(jsonArtifacts, template) {
+async function BuildArtifactListItems() {
+    const jsonArtifacts = await GetArtifactJSON();
+    const templateArtifactItem = await GetArtifactListItemTemplate();
     let artifactItems = [];
-    for(const jsonArtifact in jsonArtifacts) {
-        artifactItems.push(BuildArtifactListItem(jsonArtifact, template));
-    }
+    console.log(jsonArtifacts);   
+    for(let i = 0; i < jsonArtifacts.length; i++) {
+        let artifact = jsonArtifacts[i];
+        console.log(artifact);
+        artifactItems.push(BuildArtifactListItem(artifact, templateArtifactItem));
+    }  
     return artifactItems;
 }
 
 function BuildArtifactListItem(jsonArtifact, template) {
     let copy = template;
-    //copy = copy.replace("{{page}}", jsonArtifact.page);
+    copy = copy.replace("{{page}}", "www.google.com");
     copy = copy.replace("{{type}}", jsonArtifact.type);
     copy = copy.replace("{{name}}", jsonArtifact.title);
     copy = copy.replace("{{author}}", jsonArtifact.author);
@@ -43,7 +46,7 @@ function BuildArtifactListItem(jsonArtifact, template) {
 async function GetArtifactJSON() {
     let response = await fetch(ARTIFACT_LIST_PATH)
     let json = await response.json();
-    return json.list;
+    return json;
 }
 
 async function GetArtifactListItemTemplate() {
