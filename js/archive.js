@@ -1,15 +1,15 @@
 export {
-    Setup
+    AsyncSetup
 }
 
-import { ARTIFACT_LIST_PATH } from "/js/constant.js"
+import { AsyncGetArtifactJSON } from "/js/util.js";
 
-async function Setup() {
-    PopulateArtifacts();
+async function AsyncSetup() {
+    AsyncPopulateArtifacts();
 }
 
-async function PopulateArtifacts() {
-    const artifactListItems = await BuildArtifactListItems();
+async function AsyncPopulateArtifacts() {
+    const artifactListItems = await AsyncBuildArtifactListItems();
     const container = document.querySelector("#artifact-list table tbody");
     if(!container)
         return;
@@ -19,14 +19,12 @@ async function PopulateArtifacts() {
     }
 }
 
-async function BuildArtifactListItems() {
-    const jsonArtifacts = await GetArtifactJSON();
-    const templateArtifactItem = await GetArtifactListItemTemplate();
-    let artifactItems = [];
-    console.log(jsonArtifacts);   
+async function AsyncBuildArtifactListItems() {
+    const jsonArtifacts = await AsyncGetArtifactJSON();
+    const templateArtifactItem = await AsyncGetArtifactListItemTemplate();
+    let artifactItems = []; 
     for(let i = 0; i < jsonArtifacts.length; i++) {
         let artifact = jsonArtifacts[i];
-        console.log(artifact);
         artifactItems.push(BuildArtifactListItem(artifact, templateArtifactItem));
     }  
     return artifactItems;
@@ -34,6 +32,7 @@ async function BuildArtifactListItems() {
 
 function BuildArtifactListItem(jsonArtifact, template) {
     let copy = template;
+    copy = copy.replace("{{id}}", jsonArtifact.id);
     copy = copy.replace("{{page}}", "www.google.com");
     copy = copy.replace("{{type}}", jsonArtifact.type);
     copy = copy.replace("{{name}}", jsonArtifact.title);
@@ -43,13 +42,7 @@ function BuildArtifactListItem(jsonArtifact, template) {
     return copy;
 }
 
-async function GetArtifactJSON() {
-    let response = await fetch(ARTIFACT_LIST_PATH)
-    let json = await response.json();
-    return json;
-}
-
-async function GetArtifactListItemTemplate() {
+async function AsyncGetArtifactListItemTemplate() {
     let response = await fetch("/partial/artifact-list-item.partial.html");
     let data = response.text();
     return data;

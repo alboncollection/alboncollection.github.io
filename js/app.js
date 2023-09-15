@@ -1,8 +1,11 @@
-import * as util from "/js/util.js";
-import { Setup as SetupArchive } from "/js/archive.js"
+import { LoadHtmlInto } from "/js/util.js";
+import { AsyncSetup as SetupArchive } from "/js/archive.js"
+import { CheckForRewrite } from "/js/rewrite.js"
+import { AsyncActionGoToArtifact } from "/js/action.js";
 
 window.onload = function(){
-    util.LoadHtmlInto("/partial/footer.partial.html", "footer");
+    CheckForRewrite();
+    LoadHtmlInto("/partial/footer.partial.html", "footer");
 
     // this has to be the last thing happening to the body otherwise it doesnt load correctly
     AOS.init({
@@ -13,4 +16,8 @@ window.onload = function(){
 
 window.SetupArchive = function() {
     SetupArchive();
+}
+
+window.ActionGoToArtifact = function(id) {
+    AsyncActionGoToArtifact(id);
 }
