@@ -8,7 +8,9 @@
         "created":"62:v/C525",
         "admitted":"",
         "cover":"",
-        "tags":""
+        "tags":"",
+        "context":"",
+        "additionalcontent":""
     },
     {
         "id":"b6b7ed64-4ec3-4cba-a48b-ac28925d64ca",
@@ -19,7 +21,9 @@
         "created":"59:v/C522",
         "admitted":"",
         "cover":"",
-        "tags":""
+        "tags":"",
+        "context":"",
+        "additionalcontent":""
     },
     {
         "id":"7d6c5dc7-381a-4164-aa84-d3d2c31e2899",
@@ -30,7 +34,9 @@
         "created":"14:c/C610",
         "admitted":"",
         "cover":"",
-        "tags":""
+        "tags":"",
+        "context":"",
+        "additionalcontent":""
     },
     {
         "id":"db07091f-f9c7-47f1-89be-a6aa23e7e509",
@@ -41,7 +47,9 @@
         "author":"",
         "created":"",
         "admitted":"",
-        "tags":""
+        "tags":"",
+        "description":"",
+        "additionalcontent":""
     },
     {
         "id":"711aafd3-2316-492f-a85a-d4dcb97c8051",
@@ -52,7 +60,9 @@
         "author":"",
         "created":"",
         "admitted":"",
-        "tags":""
+        "tags":"",
+        "description":"",
+        "additionalcontent":""
     },
     {
         "id":"dd0e2ff9-e2ba-460b-a804-4fae9be80a88",
@@ -63,7 +73,9 @@
         "author":"",
         "created":"",
         "admitted":"",
-        "tags":""
+        "tags":"",
+        "description":"",
+        "additionalcontent":""
     },
     {
         "id":"ef127b70-6bb3-4914-ab66-99d1f7b4dca9",
@@ -74,7 +86,9 @@
         "author":"",
         "created":"",
         "admitted":"",
-        "tags":""
+        "tags":"",
+        "description":"",
+        "additionalcontent":""
     },
     {
         "id":"8d556920-3961-46c9-b13c-e375560829aa",
@@ -85,6 +99,8 @@
         "author":"",
         "created":"",
         "admitted":"",
-        "tags":""
+        "tags":"",
+        "description":"",
+        "additionalcontent":""
     }
 ]

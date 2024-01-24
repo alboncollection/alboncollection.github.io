@@ -14,7 +14,8 @@ const rules = [
         "then":async (params) => {
             const type = await AsyncGetArtifactType(params.get("id"));
             const page = GetArtifactPageType(type);
-            window.location.replace(page+"?"+params.toString());
+            history.pushState({},'title','/archive');
+            window.location.href = page+"?"+params.toString();
         }
     },
     {
