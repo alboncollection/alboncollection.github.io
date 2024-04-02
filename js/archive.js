@@ -1,14 +1,15 @@
 export {
-    AsyncSetup
+    AsyncSetup,
+    BuildArtifactListItem
 }
 
 import { AsyncGetArtifactJSON } from "/js/util.js";
 
 async function AsyncSetup() {
-    AsyncPopulateArtifacts();
+    AsyncComposeArtifacts();
 }
 
-async function AsyncPopulateArtifacts() {
+async function AsyncComposeArtifacts() {
     const artifactListItems = await AsyncBuildArtifactListItems();
     const container = document.querySelector("#artifact-list table tbody");
     if(!container)
@@ -33,8 +34,7 @@ async function AsyncBuildArtifactListItems() {
 function BuildArtifactListItem(jsonArtifact, template) {
     let copy = template;
     copy = copy.replace("{{id}}", jsonArtifact.id);
-    copy = copy.replace("{{page}}", "www.google.com");
-    copy = copy.replace("{{type}}", jsonArtifact.type);
+    copy = copy.replace("{{type}}", jsonArtifact.type.charAt(0).toUpperCase() + jsonArtifact.type.slice(1));
     copy = copy.replace("{{name}}", jsonArtifact.title);
     copy = copy.replace("{{author}}", jsonArtifact.author);
     copy = copy.replace("{{created}}", jsonArtifact.created);

@@ -1,7 +1,7 @@
 [
     {
         "id":"f556a36e-7367-4c5c-9f46-a82a63fc5cd4",
-        "type":"Book",
+        "type":"book",
         "markdown":"flora_and_fauna.md",
         "title":"Greenery and Wildlife of the Lands West the Main",
         "author":"Tomas Grenfild",
@@ -14,7 +14,7 @@
     },
     {
         "id":"b6b7ed64-4ec3-4cba-a48b-ac28925d64ca",
-        "type":"Book",
+        "type":"book",
         "markdown":"wester_worlds.md",
         "title":"Wester Worlds",
         "author":"Addam Dolton",
@@ -27,7 +27,7 @@
     },
     {
         "id":"7d6c5dc7-381a-4164-aa84-d3d2c31e2899",
-        "type":"Book",
+        "type":"book",
         "markdown":"reignbook.md",
         "title":"Reignbook of Holsland",
         "author":"Laurent Roote",
@@ -40,7 +40,7 @@
     },
     {
         "id":"db07091f-f9c7-47f1-89be-a6aa23e7e509",
-        "type":"Painting",
+        "type":"painting",
         "thumb":"",
         "path":"/asset/images/bend.png",
         "title":"Ginjen Bend",
@@ -53,7 +53,7 @@
     },
     {
         "id":"711aafd3-2316-492f-a85a-d4dcb97c8051",
-        "type":"Painting",
+        "type":"painting",
         "thumb":"",
         "path":"/asset/images/giants.png",
         "title":"Walking amongst Giants",
@@ -66,7 +66,7 @@
     },
     {
         "id":"dd0e2ff9-e2ba-460b-a804-4fae9be80a88",
-        "type":"Painting",
+        "type":"painting",
         "thumb":"",
         "path":"/asset/images/peaks.png",
         "title":"Atop the Misty Peaks",
@@ -79,7 +79,7 @@
     },
     {
         "id":"ef127b70-6bb3-4914-ab66-99d1f7b4dca9",
-        "type":"Painting",
+        "type":"painting",
         "thumb":"",
         "path":"/asset/images/portrait.png",
         "title":"Restored Portrait of a Tao Historian",
@@ -92,7 +92,7 @@
     },
     {
         "id":"8d556920-3961-46c9-b13c-e375560829aa",
-        "type":"Painting",
+        "type":"painting",
         "thumb":"",
         "path":"/asset/images/topography.png",
         "title":"Topography of Kaifen and it's surrounding area",

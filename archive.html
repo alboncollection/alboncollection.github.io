@@ -2,6 +2,7 @@
 <html>
     <head>
         <script src="/js/app.js" type="module"></script>
+        <script src="/js/route.js" type="module"></script>
         <title>Archive</title>
         <!-- meta -->
             <!-- required -->
@@ -25,7 +26,11 @@
             <script src="/js/app.js" type="module"></script>
     </head>
     <body>
-        <nav></nav>
+        <aside class="loader align-items-center justify-content-center">
+            <div class="center">
+                <div class="spinner-grow" role="status"></div>
+            </div>
+        </aside>
         <main>
             <!-- title section -->
             <section class="height-100 align-items-center p-4 px-md-5 gallery-background">
@@ -58,6 +63,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- populated by JS -->
                             </tbody>
                         </table>
                     </div>
@@ -65,8 +71,5 @@
             </section>
         </main>
     </body>
-    <footer></footer>
-    <script>
-        window.addEventListener("load", () => window.SetupArchive());
-    </script>
+    <footer js-html-load="/partial/footer.partial.html"></footer>
 </html>

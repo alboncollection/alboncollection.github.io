@@ -1,23 +1,22 @@
-import { LoadHtmlInto } from "/js/util.js";
-import { AsyncSetup as SetupArchive } from "/js/archive.js"
-import { CheckForRewrite } from "/js/rewrite.js"
-import { AsyncActionGoToArtifact } from "/js/action.js";
+import { AsyncRoute } from "/js/route.js";
+import { AsyncResolveAttributesForNodeList } from "/js/setup.js";
+import { ShowLoadingScreen, HideLoadingScreen, EnableScroll, DisableScroll } from "/js/util.js";
 
-window.onload = function(){
-    CheckForRewrite();
-    LoadHtmlInto("/partial/footer.partial.html", "footer");
+DisableScroll();
+ShowLoadingScreen();
+
+window.onload = async function(){
+    const path = window.location.pathname;
+    const params = new URLSearchParams(window.location.search);
+    await AsyncRoute(path, params);
+    AsyncResolveAttributesForNodeList(document.childNodes);
+
+    HideLoadingScreen();
+    EnableScroll();
 
     // this has to be the last thing happening to the body otherwise it doesnt load correctly
     AOS.init({
         duration:1000,
         once:true,
     });
-}
-
-window.SetupArchive = function() {
-    SetupArchive();
-}
-
-window.ActionGoToArtifact = function(id) {
-    AsyncActionGoToArtifact(id);
 }

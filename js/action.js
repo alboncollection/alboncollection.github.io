@@ -1,7 +1,7 @@
-export {
-    AsyncActionGoToArtifact
+function ActionGoToArtifact(id) {
+    window.location.replace("/archive?id="+id);
 }
 
-async function AsyncActionGoToArtifact(id) {
-    window.location.replace("/archive.html?id="+id);
+window.ActionGoToArtifact = function(id) {
+    ActionGoToArtifact(id);
 }

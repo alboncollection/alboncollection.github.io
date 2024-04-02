@@ -20,15 +20,15 @@ const rules = [
     },
     {
         "if":(path,params) => {return (path=="/archive-item.html" || path=="archive-item")},
-        "then":(params) => {history.pushState({},'title','/archive.html?'+params.toString());}
+        "then":(params) => {history.pushState({},'title','/archive?'+params.toString());}
     },
     {
         "if":(path,params) => {return (path=="/artifact-book.html" || path=="artifact-book")},
-        "then":(params) => {history.pushState({},'title','/archive.html?'+params.toString());}
+        "then":(params) => {history.pushState({},'title','/archive?'+params.toString());}
     },
     {
         "if":(path,params) => {return (path=="/artifact-painting.html" || path=="artifact-painting")},
-        "then":(params) => {history.pushState({},'title','/archive.html?'+params.toString());}
+        "then":(params) => {history.pushState({},'title','/archive?'+params.toString());}
     }
 ]
 

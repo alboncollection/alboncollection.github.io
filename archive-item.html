@@ -25,20 +25,22 @@
             <script src="/js/app.js" type="module"></script>
     </head>
     <body>
-        <nav></nav>
+        <aside class="loader align-items-center justify-content-center">
+            <div class="center">
+                <div class="spinner-grow" role="status"></div>
+            </div>
+        </aside>
         <main>
-            <!-- title section -->
-            <section class="height-100 align-items-center p-4 px-md-5">
+            <section class="height-100 align-items-center p-4 px-md-5 library-background">
                 <div class="container">
                     <div class="row text-center">
-                        <h1 class="title" data-aos="fade-left">Item</h1>
+                        <h1 class="title" data-aos="fade-left">{{title}}</h1>
+                        <h5 class="subtitle" data-aos="fade-left" data-aos-delay="50">{{subtitle}}</h5>
                     </div>
                 </div>
             </section>
+            <!-- populated by JS -->
         </main>
     </body>
-    <footer></footer>
-    <script>
-        window.addEventListener("load", () => window.SetupArchiveItem());
-    </script>
+    <footer js-html-load="partial/footer.partial.html"></footer>
 </html>
